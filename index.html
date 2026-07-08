@@ -270,9 +270,42 @@
         <span class="eyebrow" data-i18n="contact_eyebrow">Réservation &amp; informations</span>
         <h2 data-i18n="contact_title">Contactez-nous directement</h2>
         <p data-i18n="contact_text">Pour connaître les disponibilités, les tarifs ou poser une question, écrivez-nous — réponse rapide garantie.</p>
-        <div class="hero-actions" style="margin-top:20px;">
-          <a class="btn btn-primary" id="waBtn" href="https://wa.me/21623208208" target="_blank" rel="noopener" style="background:#25D366;" data-i18n="contact_wa">WhatsApp : +216 23 208 208</a>
-          <a class="btn btn-primary" id="bookBtn" href="#" data-i18n="contact_book">Demander une réservation</a>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px; margin-top:24px;">
+          <div>
+            <label for="fName" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_name">Nom complet</label>
+            <input type="text" id="fName" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box;">
+          </div>
+          <div>
+            <label for="fPhone" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_phone">Téléphone / WhatsApp</label>
+            <input type="tel" id="fPhone" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box;">
+          </div>
+          <div>
+            <label for="fCheckin" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_checkin">Arrivée</label>
+            <input type="date" id="fCheckin" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box; color-scheme:dark;">
+          </div>
+          <div>
+            <label for="fCheckout" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_checkout">Départ</label>
+            <input type="date" id="fCheckout" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box; color-scheme:dark;">
+          </div>
+          <div>
+            <label for="fGuests" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_guests">Nombre de voyageurs</label>
+            <input type="number" id="fGuests" min="1" max="12" value="4" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box;">
+          </div>
+          <div style="grid-column:1 / -1;">
+            <label for="fMessage" style="display:block; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--sand-gold); margin-bottom:6px;" data-i18n="form_message">Message (optionnel)</label>
+            <textarea id="fMessage" rows="3" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(248,245,239,0.3); background:rgba(248,245,239,0.08); color:var(--white-wash); font-family:inherit; box-sizing:border-box;"></textarea>
+          </div>
+        </div>
+        <p id="fError" style="color:#ffb4b4; font-size:0.88rem; min-height:1.2em; margin:10px 0 0;"></p>
+
+        <div class="hero-actions" style="margin-top:14px;">
+          <button type="button" id="fSendWa" class="btn btn-primary" style="background:#25D366; border:none; cursor:pointer;" data-i18n="form_send_wa">Envoyer par WhatsApp</button>
+          <button type="button" id="fSendEmail" class="btn btn-primary" style="border:none; cursor:pointer;" data-i18n="form_send_email">Envoyer par email</button>
+        </div>
+
+        <div class="hero-actions" style="margin-top:20px; padding-top:20px; border-top:1px dashed rgba(248,245,239,0.3);">
+          <a class="btn btn-ghost" id="waBtn" href="https://wa.me/21623208208" target="_blank" rel="noopener" style="border-color: var(--white-wash); color: var(--white-wash);" data-i18n="contact_wa">WhatsApp : +216 23 208 208</a>
           <a class="btn btn-ghost" id="askBtn" style="border-color: var(--white-wash); color: var(--white-wash);" href="#" data-i18n="contact_ask">Poser une question</a>
         </div>
       </div>
