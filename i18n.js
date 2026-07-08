@@ -9,7 +9,7 @@ const I18N = {
     hero_cta1: 'Demander les disponibilités', hero_cta2: 'Découvrir la villa',
     stat_suites: 'Suites', stat_pool: 'Piscine privée', stat_kitchen: 'Grande cuisine', stat_ac: 'Climatiseurs', stat_bbq: "Cuisine d'été + BBQ", stat_guests: 'Voyageurs max', stat_showers: 'Douches',
     villa_eyebrow: 'La villa', villa_title: 'Pensée pour les séjours en famille ou entre amis',
-    f1_title: "4 suites — jusqu'à 12 personnes", f1_text: "Chaque suite dispose de sa propre salle de douche. Idéal pour recevoir plusieurs familles ou un grand groupe d'amis, jusqu'à 12 voyageurs.", f7_title: 'Grand salon', f7_text: 'Un vaste salon ouvert sur la piscine, avec coin détente traditionnel, pour se retrouver tous ensemble.', f8_title: "Sono d'ambiance", f8_text: "Enceinte puissante à disposition pour mettre l'ambiance au bord de la piscine ou dans le salon.",
+    f1_title: "4 suites — jusqu'à 12 personnes", f1_text: "Chaque suite dispose de sa propre salle de douche. Idéal pour recevoir plusieurs familles ou un grand groupe d'amis, jusqu'à 12 voyageurs.", f7_title: 'Grand salon', f7_text: 'Un vaste salon ouvert sur la piscine, avec coin détente traditionnel, pour se retrouver tous ensemble.', f8_title: "Sono d'ambiance + 2 micros", f8_text: "Enceinte puissante avec 2 micros à disposition — karaoké, fêtes et ambiance garantie au bord de la piscine ou dans le salon.",
     f2_title: 'Piscine privée', f2_text: "Un grand bassin entouré de gazon et d'oliviers, pensé pour les longues journées d'été.",
     f3_title: 'Grande cuisine', f3_text: 'Entièrement équipée, pensée pour cuisiner en groupe et recevoir autour d\'un repas.',
     f4_title: 'Climatisation', f4_text: 'Deux climatiseurs répartis dans la villa pour rester au frais pendant les mois d\'été.',
@@ -29,11 +29,12 @@ const I18N = {
     near6_title: 'Médina de Hammamet', near6: 'À 12 min en voiture — la vieille ville historique, sa kasbah, son souk et sa plage au pied des remparts.',
     contact_eyebrow: 'Réservation & informations', contact_title: 'Contactez-nous directement',
     contact_text: 'Pour connaître les disponibilités, les tarifs ou poser une question, écrivez-nous — réponse rapide garantie.',
-    contact_book: 'Demander une réservation', contact_ask: 'Poser une question',
+    contact_book: 'Demander une réservation', contact_ask: 'Poser une question', contact_wa: 'WhatsApp : +216 23 208 208',
     footer_note: 'Réservation directe',
     mail_book_subject: 'Demande de réservation — Dar Sekia',
     mail_book_body: 'Bonjour,\n\nJe souhaite réserver la villa Dar Sekia.\n\nDates souhaitées : \nNombre de voyageurs : \n\nMerci !',
     mail_ask_subject: 'Question — Dar Sekia',
+    wa_msg: 'Bonjour, je vous contacte au sujet de la villa Dar Sekia à Hammamet.',
   },
   en: {
     _dir: 'ltr',
@@ -45,7 +46,7 @@ const I18N = {
     hero_cta1: 'Check availability', hero_cta2: 'Discover the villa',
     stat_suites: 'Suites', stat_pool: 'Private pool', stat_kitchen: 'Large kitchen', stat_ac: 'Air conditioners', stat_bbq: 'Outdoor kitchen + BBQ', stat_guests: 'Guests max', stat_showers: 'Showers',
     villa_eyebrow: 'The villa', villa_title: 'Designed for family holidays and groups of friends',
-    f1_title: '4 suites — up to 12 guests', f1_text: 'Each suite has its own shower room. Ideal for several families or a large group of friends, up to 12 guests.', f7_title: 'Large living room', f7_text: 'A spacious living room opening onto the pool, with a traditional lounge corner to gather all together.', f8_title: 'Sound system', f8_text: 'A powerful speaker available to set the mood by the pool or in the living room.',
+    f1_title: '4 suites — up to 12 guests', f1_text: 'Each suite has its own shower room. Ideal for several families or a large group of friends, up to 12 guests.', f7_title: 'Large living room', f7_text: 'A spacious living room opening onto the pool, with a traditional lounge corner to gather all together.', f8_title: 'Sound system + 2 mics', f8_text: 'A powerful speaker with 2 microphones — karaoke, parties and great vibes by the pool or in the living room.',
     f2_title: 'Private pool', f2_text: 'A large pool surrounded by lawn and olive trees, made for long summer days.',
     f3_title: 'Large kitchen', f3_text: 'Fully equipped, designed for cooking together and sharing meals.',
     f4_title: 'Air conditioning', f4_text: 'Two air conditioners throughout the villa to stay cool during the summer months.',
@@ -65,11 +66,12 @@ const I18N = {
     near6_title: 'Hammamet Medina', near6: '12 min by car — the historic old town, its kasbah, souk and beach at the foot of the ramparts.',
     contact_eyebrow: 'Booking & information', contact_title: 'Contact us directly',
     contact_text: 'For availability, rates or any question, write to us — quick reply guaranteed.',
-    contact_book: 'Request a booking', contact_ask: 'Ask a question',
+    contact_book: 'Request a booking', contact_ask: 'Ask a question', contact_wa: 'WhatsApp: +216 23 208 208',
     footer_note: 'Direct booking',
     mail_book_subject: 'Booking request — Dar Sekia',
     mail_book_body: 'Hello,\n\nI would like to book the Dar Sekia villa.\n\nDesired dates: \nNumber of guests: \n\nThank you!',
     mail_ask_subject: 'Question — Dar Sekia',
+    wa_msg: 'Hello, I am contacting you about the Dar Sekia villa in Hammamet.',
   },
   de: {
     _dir: 'ltr',
@@ -81,7 +83,7 @@ const I18N = {
     hero_cta1: 'Verfügbarkeit anfragen', hero_cta2: 'Villa entdecken',
     stat_suites: 'Suiten', stat_pool: 'Privater Pool', stat_kitchen: 'Große Küche', stat_ac: 'Klimaanlagen', stat_bbq: 'Außenküche + Grill', stat_guests: 'Gäste max.', stat_showers: 'Duschen',
     villa_eyebrow: 'Die Villa', villa_title: 'Ideal für Familienurlaub und Freundesgruppen',
-    f1_title: '4 Suiten — bis zu 12 Gäste', f1_text: 'Jede Suite hat ihr eigenes Duschbad. Ideal für mehrere Familien oder eine große Freundesgruppe, bis zu 12 Gäste.', f7_title: 'Großes Wohnzimmer', f7_text: 'Ein großzügiges Wohnzimmer mit Blick auf den Pool und traditioneller Sitzecke — zum gemeinsamen Beisammensein.', f8_title: 'Soundanlage', f8_text: 'Ein leistungsstarker Lautsprecher steht bereit — für Stimmung am Pool oder im Wohnzimmer.',
+    f1_title: '4 Suiten — bis zu 12 Gäste', f1_text: 'Jede Suite hat ihr eigenes Duschbad. Ideal für mehrere Familien oder eine große Freundesgruppe, bis zu 12 Gäste.', f7_title: 'Großes Wohnzimmer', f7_text: 'Ein großzügiges Wohnzimmer mit Blick auf den Pool und traditioneller Sitzecke — zum gemeinsamen Beisammensein.', f8_title: 'Soundanlage + 2 Mikrofone', f8_text: 'Ein leistungsstarker Lautsprecher mit 2 Mikrofonen — Karaoke, Feiern und gute Stimmung am Pool oder im Wohnzimmer.',
     f2_title: 'Privater Pool', f2_text: 'Ein großes Becken, umgeben von Rasen und Olivenbäumen — gemacht für lange Sommertage.',
     f3_title: 'Große Küche', f3_text: 'Voll ausgestattet, ideal zum gemeinsamen Kochen und für gesellige Mahlzeiten.',
     f4_title: 'Klimaanlage', f4_text: 'Zwei Klimaanlagen in der Villa sorgen für Abkühlung in den Sommermonaten.',
@@ -101,11 +103,12 @@ const I18N = {
     near6_title: 'Medina von Hammamet', near6: '12 Min. mit dem Auto — die historische Altstadt mit Kasbah, Souk und Strand am Fuße der Stadtmauer.',
     contact_eyebrow: 'Buchung & Informationen', contact_title: 'Kontaktieren Sie uns direkt',
     contact_text: 'Für Verfügbarkeit, Preise oder Fragen schreiben Sie uns — schnelle Antwort garantiert.',
-    contact_book: 'Buchung anfragen', contact_ask: 'Frage stellen',
+    contact_book: 'Buchung anfragen', contact_ask: 'Frage stellen', contact_wa: 'WhatsApp: +216 23 208 208',
     footer_note: 'Direktbuchung',
     mail_book_subject: 'Buchungsanfrage — Dar Sekia',
     mail_book_body: 'Guten Tag,\n\nich möchte die Villa Dar Sekia buchen.\n\nGewünschte Daten: \nAnzahl der Gäste: \n\nVielen Dank!',
     mail_ask_subject: 'Frage — Dar Sekia',
+    wa_msg: 'Guten Tag, ich kontaktiere Sie bezüglich der Villa Dar Sekia in Hammamet.',
   },
   ar: {
     _dir: 'rtl',
@@ -117,7 +120,7 @@ const I18N = {
     hero_cta1: 'استفسر عن التوفر', hero_cta2: 'اكتشف الفيلا',
     stat_suites: 'أجنحة', stat_pool: 'مسبح خاص', stat_kitchen: 'مطبخ كبير', stat_ac: 'مكيفات هواء', stat_bbq: 'مطبخ خارجي + شواية', stat_guests: 'ضيفاً كحد أقصى', stat_showers: 'دُوشات',
     villa_eyebrow: 'الفيلا', villa_title: 'مصممة للإقامات العائلية أو بين الأصدقاء',
-    f1_title: '4 أجنحة — حتى 12 شخصاً', f1_text: 'كل جناح له حمّامه الخاص. مثالي لاستقبال عدة عائلات أو مجموعة كبيرة من الأصدقاء، حتى 12 ضيفاً.', f7_title: 'صالون كبير', f7_text: 'صالون واسع مفتوح على المسبح، مع ركن جلوس تقليدي للاجتماع جميعاً.', f8_title: 'نظام صوتي', f8_text: 'مكبّر صوت قوي متاح لإضفاء الأجواء بجانب المسبح أو في الصالون.',
+    f1_title: '4 أجنحة — حتى 12 شخصاً', f1_text: 'كل جناح له حمّامه الخاص. مثالي لاستقبال عدة عائلات أو مجموعة كبيرة من الأصدقاء، حتى 12 ضيفاً.', f7_title: 'صالون كبير', f7_text: 'صالون واسع مفتوح على المسبح، مع ركن جلوس تقليدي للاجتماع جميعاً.', f8_title: 'نظام صوتي + ميكروفونان', f8_text: 'مكبّر صوت قوي مع ميكروفونين — كاريوكي وحفلات وأجواء رائعة بجانب المسبح أو في الصالون.',
     f2_title: 'مسبح خاص', f2_text: 'مسبح كبير محاط بالعشب وأشجار الزيتون، مصمم لأيام الصيف الطويلة.',
     f3_title: 'مطبخ كبير', f3_text: 'مجهز بالكامل، مصمم للطبخ الجماعي والاستقبال حول مائدة واحدة.',
     f4_title: 'تكييف الهواء', f4_text: 'مكيفان موزعان في الفيلا للحفاظ على البرودة خلال أشهر الصيف.',
@@ -137,11 +140,12 @@ const I18N = {
     near6_title: 'المدينة العتيقة بالحمّامات', near6: '12 دقيقة بالسيارة — المدينة التاريخية، قصبتها، سوقها وشاطئها عند أسوارها.',
     contact_eyebrow: 'الحجز والمعلومات', contact_title: 'اتصل بنا مباشرة',
     contact_text: 'لمعرفة التوفر أو الأسعار أو لطرح أي سؤال، راسلنا — رد سريع مضمون.',
-    contact_book: 'اطلب حجزاً', contact_ask: 'اطرح سؤالاً',
+    contact_book: 'اطلب حجزاً', contact_ask: 'اطرح سؤالاً', contact_wa: 'واتساب: +216 23 208 208',
     footer_note: 'حجز مباشر',
     mail_book_subject: 'طلب حجز — دار الساقية',
     mail_book_body: 'مرحباً،\n\nأود حجز فيلا دار الساقية.\n\nالتواريخ المطلوبة: \nعدد المسافرين: \n\nشكراً!',
     mail_ask_subject: 'سؤال — دار الساقية',
+    wa_msg: 'مرحباً، أتواصل معكم بخصوص فيلا دار الساقية بالحمّامات.',
   },
 };
 
@@ -162,6 +166,8 @@ function applyLang(lang) {
   const askBtn = document.getElementById('askBtn');
   if (bookBtn) bookBtn.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(dict.mail_book_subject)}&body=${encodeURIComponent(dict.mail_book_body)}`;
   if (askBtn) askBtn.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(dict.mail_ask_subject)}`;
+  const waBtn = document.getElementById('waBtn');
+  if (waBtn) waBtn.href = `https://wa.me/21623208208?text=${encodeURIComponent(dict.wa_msg)}`;
 
   document.querySelectorAll('#langSwitch button').forEach((b) => {
     b.classList.toggle('active', b.dataset.lang === lang);
