@@ -269,29 +269,30 @@ if (fEmailBtn) fEmailBtn.addEventListener('click', async () => {
   err.textContent = dict.form_sending;
   fEmailBtn.disabled = true;
   try {
-    const res = await fetch('https://formsubmit.co/ajax/' + CONTACT_EMAIL, {
+    const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
-        _subject: dict.form_title + ' — Dar Sekia',
+        access_key: '2c62d14b-4031-4fd1-b903-6964b9e54a3f',
+        subject: dict.form_title + ' — Dar Sekia',
+        from_name: 'Site darsekia.com',
         name: document.getElementById('fName').value.trim(),
         phone: document.getElementById('fPhone').value.trim(),
         email: document.getElementById('fEmail').value.trim(),
-        _replyto: document.getElementById('fEmail').value.trim(),
-        demande: body,
+        replyto: document.getElementById('fEmail').value.trim(),
+        message: body,
       }),
     });
-    if (!res.ok) {
-      const detail = await res.text().catch(() => '');
-      console.error('FormSubmit error', res.status, detail);
-      throw new Error(detail);
-    }
     const data = await res.json().catch(() => ({}));
-    console.log('FormSubmit response', data);
+    console.log('Web3Forms response', data);
+    if (!res.ok || !data.success) {
+      console.error('Web3Forms error', res.status, data);
+      throw new Error(data.message || 'Echec envoi');
+    }
     err.style.color = '#b7f0c9';
     err.textContent = dict.form_sent;
   } catch (e) {
-    console.error('Envoi FormSubmit impossible, bascule sur mailto', e);
+    console.error('Envoi Web3Forms impossible, bascule sur mailto', e);
     err.style.color = '#ffb4b4';
     err.textContent = dict.form_send_fail;
     // Fallback: ouvrir l'application email avec le message pre-rempli
