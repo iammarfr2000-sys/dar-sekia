@@ -281,7 +281,13 @@ if (fEmailBtn) fEmailBtn.addEventListener('click', async () => {
         demande: body,
       }),
     });
-    if (!res.ok) throw new Error();
+    if (!res.ok) {
+      const detail = await res.text().catch(() => '');
+      console.error('FormSubmit error', res.status, detail);
+      throw new Error(detail);
+    }
+    const data = await res.json().catch(() => ({}));
+    console.log('FormSubmit response', data);
     err.style.color = '#b7f0c9';
     err.textContent = dict.form_sent;
   } catch (e) {
