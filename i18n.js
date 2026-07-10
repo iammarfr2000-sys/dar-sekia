@@ -267,7 +267,6 @@ function buildBookingMessage(dict) {
     dict.form_checkin + ': ' + ci,
     dict.form_checkout + ': ' + co + (nights ? ' (' + nights + ')' : ''),
     dict.form_guests + ': ' + guests,
-    estimateStay(ci, co, dict),
     msg ? '' : null,
     msg || null,
   ].filter((l) => l !== null);
